@@ -1,4 +1,6 @@
 # Prerequisites
+cmake-build-debug
+CMakeLists.txt
 *.d
 
 # Compiled Object files
