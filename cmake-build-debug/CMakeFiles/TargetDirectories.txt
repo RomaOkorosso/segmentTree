@@ -1,3 +1,0 @@
-C:/Users/Roma/Desktop/education algos and structs C++/fucckingRally/cmake-build-debug/CMakeFiles/fucckingRally.dir
-C:/Users/Roma/Desktop/education algos and structs C++/fucckingRally/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Roma/Desktop/education algos and structs C++/fucckingRally/cmake-build-debug/CMakeFiles/rebuild_cache.dir
