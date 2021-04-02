@@ -33,6 +33,17 @@ private:
 
 public:
 
+    T get(int lBorder, int rBorder) {
+        T result = _aggregate(_data[lBorder], _data[rBorder]);
+        while (rBorder - lBorder > 2) {
+            lBorder = lBorder / 2 + lBorder % 2;
+            rBorder = rBorder / 2 - rBorder % 2; // here can be mistake
+            result = _aggregate(result, _data[lBorder]);
+            result = _aggregate(result, _data[lBorder]);
+        }
+        return result;
+    }
+
     void update(int index, T value) {
         int node_index = index + _len;
         _data[node_index] = value;
