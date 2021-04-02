@@ -32,6 +32,17 @@ private:
     }
 
 public:
+
+    void update(int index, T value) {
+        int node_index = index + _len;
+        _data[node_index] = value;
+
+        while (node_index > 1) {
+            node_index = parent(node_index);
+            _data[node_index] = _aggregate(leftChild(node_index), rightChild(node_index));
+        }
+    }
+
     void print() {
         int l = _len;
         while (l) {
